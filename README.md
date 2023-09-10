@@ -29,3 +29,10 @@ Still the git commit also saved in local machine not in remote repo, So push com
         'git remote show origin', if main
     then 'git push origin main'
 
+For repo created local machine may be via vs code editor,
+
+it should be pushed to remote git repository, So to do this, first initialize your project. on terminal of that project directory type this git command 'git init', initializes the project in git repo.
+now after tracking and commiting it, git push command don't pushes because the repo in remote should created by same name first. 'git remote add origin git@github.com:Asnaku/demo-repo2.git' to connect project(demo2) to remote 'git remote -v' to check any connected remote repo. 'git push -u origin master' to push, -u is upstream, helps to next time without saying origin master
+
+## Git Branching.
+to switch to branches 'git checkout branchName' to create new branch 'git checkout -b feature-issue/description'
